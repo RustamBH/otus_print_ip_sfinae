@@ -3,16 +3,16 @@ cmake_minimum_required(VERSION 3.5)
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
-project(otus_print_ip_sfinae VERSION ${PROJECT_VESRION})
+project(print_ip VERSION ${PROJECT_VESRION})
 
 add_executable(
-	otus_print_ip_sfinae	
+	print_ip
 	main.cpp
 )
 
-set_target_properties(otus_print_ip_sfinae PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
+set_target_properties(print_ip PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
 
-install(TARGETS otus_print_ip_sfinae RUNTIME DESTINATION bin)
+install(TARGETS print_ip RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
